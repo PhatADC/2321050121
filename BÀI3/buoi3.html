@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Buổi 3</title>
+</head>
+<body>
+    <Marquee>
+        <img src="https://scontent.fhan12-1.fna.fbcdn.net/v/t39.30808-6/536580313_1179251690900123_5826884044064791260_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFcMKrRsH-sLvs708iFpvQmuL5JZDnRhz-4vklkOdGHPwibMvB1ubzugJB0s2gEpGIUPwGnA-tk8D-0V-vlqQS5&_nc_ohc=CCTamdHpdgoQ7kNvwGr1tyV&_nc_oc=Adlqt4FQgYr0EN4Biw77VJJ-_rJYZace4BzRFanCQAXBKrDCH8C58c4OZkrjxIzyIFs&_nc_zt=23&_nc_ht=scontent.fhan12-1.fna&_nc_gid=uVqw0ws6p_skLEv0a7Dsdw&oh=00_AfWh-y9VC4bWMcTuJwi0BsjBTuqlnbV67N3Xc1TtxW_sOQ&oe=68AB71ED" alt="">
+    </Marquee>
+    <h1>Bài 3</h1>
+    <!-- Danh sách (list) -->
+     <!-- có thứ tự ol, li -->
+      <p>Danh sách các công việc buổi sáng</p>
+      <ol>
+        <li>Thức dậy</li>
+        <li>Đánh răng</li>
+        <li>Ăn sáng</li>
+        <li>Đi học</li>
+        <li>Giải lao</li>
+      </ol>
+
+      <!-- không thứ tự: ul, li -->
+       <p>Các ngôn ngữ lập trình WEB</p>
+       <ul>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+       </ul>
+
+       <!-- form là 1 phần tử chứa các phần tử của form -->
+        <h1>Form</h1>
+        <form>
+            <div>
+                <b>Họ và tên: </b>
+                <input type="text" name="hoten" placeholder="Nhap ten vao day">
+            </div>
+            <br>
+            <div>
+                <b>Năm: </b>
+                <input type="text" name="hoten" value="2025" readonly>
+            </div>
+            <br>
+            <div>
+                <b>Giới thiệu chi tiết về bản thân: </b> <br>
+                <textarea name="gioithieu">Nhập giới thiệu...</textarea>
+            </div>
+            <br>
+            <div>
+                <b>Email: </b>
+                <input type="email" name="hoten" placeholder="Nhập email: ">
+            </div>
+            <br>
+            <div>
+                <b>Số điện thoại: </b> <br>
+                <input type="tel" name="sodienthoai" placeholder="Dạng số: 09xxxxxxxx" required
+                pattern="(([0]{1})([0, 3, 9]{1})([0-9]{8}))">
+            </div>
+            <br>
+            <div>
+                <b>Giới tính: </b> <br>
+                <input type="radio" name="Giới tính" value="Nam"> Nam <br>
+                <input type="radio" name="Giới tính" value="Nữ"> Nữ <br>
+                <input type="radio" name="Giới tính" value="Không xác định"> Không xác định <br>
+            </div>
+            <br>
+            <div>
+                <b>Sở thích: </b> <br>
+                Game: <input type="checkbox" name="sothich" value="game"> <br>
+                Music: <input type="checkbox" name="sothich" value="music"> <br>
+                Sport: <input type="checkbox" name="sothich" value="sport"> <br>
+            </div>
+            <br>
+            <div>
+                <b>Trình duyệt ưa thích</b>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                </datalist>
+                <br>
+            <div>
+                <select name="browsers">
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Opera">Opera</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                0 <input type="range" value="50"> 100
+            </div>
+            <br>
+            <div>
+                <b>Tuổi</b>
+                <input type="number" name="tuoi" step="0.6">
+            </div>
+            <br>
+            <div>
+                <b>Ngày tháng năm sinh: </b>
+                <input type="date" name="ngaythangnamsinh">
+            </div>
+            <br>
+            <div>
+                <b>Màu sắc yêu thích: </b>
+                <input type="color" name="" id="">
+            </div>
+            <br>
+            <div>
+                <b>Chọn ảnh đại diện: </b>
+                <input type="file" name="" id="">
+            </div>
+            <br>
+            <div>
+                <b>Mật khẩu: </b>
+                <input type="password" name="" id="">
+            </div>
+            <br>
+            <div>
+                <input type="reset" name="" id="">
+            </div>
+            <div>
+                <input type="submit">
+                <input type="button" value="Xác nhận">
+            </div>
+        </form>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/seweFDEPyKU?si=PytrlHX43qPUUuqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+        </iframe>
+        <br>
+
+        <video controls width="560" height="315">
+            <source src="c:\Users\User\Downloads\7274469349676832386.mp4" type="video/mp4">
+        </video>
+        <br>
+
+        <audio controls>
+            <source src="BauTroiMoi.mp3" type="audio/mp3">
+        </audio>
+</body>
+</html>
