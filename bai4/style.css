@@ -1,0 +1,36 @@
+h3{
+    color: orange;
+}
+
+#title{
+    background-color: aqua;
+}
+
+.bg{
+    background-color: blue;
+}
+
+p{
+    color: red;
+    background-color: blue;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: green;
+
+    /* cách xung quanh phần tử của nó cách phần tử xung quanh thì dùng margin */
+    /* 2 giá trị: giá trị 1(trên, dưới), 2(trái, phải); truyền 1 giá trị: cách xung quanh = giá trị đó */
+    /* margin:50px 30px 100px 10px; */
+    width: 50%;
+
+    /* margin: auto là căn khối ra giữa */
+    margin:50px auto; 
+}
+
+.box3{
+    background-color: orange;
+}
