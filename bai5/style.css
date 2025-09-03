@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+
+.danhmuc {
+    background-color: #2FA4E7;
+    padding: 20px;
+}
+
+.danhmuc-danhsach {
+    /* display: flex; để theo 1 hàng ngang */
+    display: flex;
+
+    /* list-style: none; để bỏ dấu chấm */
+    list-style: none;
+    gap: 20px;
+}
+
+.danhmuc-lienket {
+    color: white;
+
+    /* text-decoration: none; để bỏ gạch chân */
+    text-decoration: none;
+    padding: 20px;
+    font-size: large;
+}
+
+.danhmuc-muc {
+    /* margin: 10px; */
+}
+
+.danhmuc-lienket:hover {
+    color: grey;
+    font-size: bold;
+    cursor: pointer;
+}
+
+.logo {
+    height: 100px;
+    background-color: grey;
+}
+
+.left {
+    /* height: 1000px;
+    background-color: aqua; */
+    width: 80%;
+    border-radius: 10px;
+}
+
+.right {
+    height: 1000px;
+    background-color: chocolate;
+    width: 20%;
+}
+
+main {
+    display: flex;
+}
+
+.tieude {
+     background-color: #2FA4E7;
+     padding: 20px;
+     color: white;
+     font-size: x-large;
+     font-weight: bold;
+
+     /* border-radius: 10px 10px 0px 0px; xét theo 
+     chiều cong trái của kim đồng hồ */
+     border-radius: 10px 10px 0px 0px;
+}
+
+.tintuc-danhsach {
+    display: flex;
+    justify-content: space-between;
+}
+
+.baiviet {
+    height: 200px;
+    background-color: grey;
+    width: 32%;
+}
+
+.anh {
+    width: 100%;
+}
