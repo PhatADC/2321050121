@@ -54,7 +54,7 @@ ul {
 
 .right {
     height: 1000px;
-    background-color: chocolate;
+    background-color: white;
     width: 20%;
 }
 
@@ -83,8 +83,70 @@ main {
     height: 200px;
     background-color: grey;
     width: 32%;
+    cursor: pointer;
 }
 
 .anh {
-    width: 100%;
+    width: 370px ;
 }
+
+.app {
+    color: white;
+}
+
+.Huongdan {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2FA4E7;
+}
+
+.tach {
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.image-container {
+  position: relative; /* Đặt làm mốc để định vị phần tử con */
+  display: inline-block; /* Để ảnh và văn bản hiển thị trên cùng dòng */
+  margin: 10px; /* Khoảng cách tùy chọn */
+}
+
+.image-container img {
+  display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+  cursor: pointer;
+}
+
+.text-on-image {
+  position: absolute; /* Định vị tuyệt đối */
+  top: 50%; /* Vị trí từ đỉnh */
+  left: 50%; /* Vị trí từ trái */
+  transform: translate(-50%, -50%); /* Căn giữa chính xác */
+  color: white; /* Màu chữ */
+  font-size: 24px; /* Kích thước chữ */
+  font-weight: bold; /* Độ đậm của chữ */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Đổ bóng cho chữ */
+  z-index: 10; /* Đảm bảo chữ nằm trên ảnh */
+}
+
+.noidung-thongbao {
+    display: flex;
+}
+
+.left-thongbao {
+    width: 25%;
+    
+}
+
+.right-thongbao {
+    width: 75%;
+}
+
+.taikhoan {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+
+
