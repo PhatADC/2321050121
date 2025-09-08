@@ -132,20 +132,45 @@ main {
 .noidung-thongbao {
     display: flex;
 }
-
+.input{
+    display: flex;
+     border: 1px solid #ccc;
+     margin: 5px 10px;
+}
 .left-thongbao {
     width: 25%;
     
 }
-
+.input b{
+   padding: 10px; 
+   background-color: gray;
+}
 .right-thongbao {
-    width: 75%;
+    
 }
 
 .taikhoan {
     width: 100%;
     background-color: white;
     border: 1px solid #ccc;
+}
+.matkhau{
+    width: 85%;
+}
+.quenmatkhau a{
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.dangnhap h1{
+    padding: 10px ;
+    margin: 0;
+}
+
+.submitt {
+    display: block;
 }
 
 
