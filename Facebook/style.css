@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f4f7;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;   
+}
+
+.anh {
+    width: 84%;
+}
+
+.hi {
+    background-color: #fff;
+}
+
+.noidungtrai {
+    padding: 200px 100px 100px 250px;
+    /* border: 1px solid #000; */
+}
+
+.chu {
+    font-size: 24px;
+    line-height: 28px;
+    width: 100%;
+    color: #1c1e21;
+    text-align: center;
+    max-width: 400px;
+}
+
+.anh {
+    height: 106px;
+    margin: -28px;
+    border: 0px;
+}
+
+.nhap {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border: 1px solid #ccc;
+    color: #1d2129;
+    margin: 8px;
+    background-color: #fff;
+}
+
+.nhap:hover{
+    /* border: 1px solid blue; */
+}
+
+.btn {
+    background-color: #0866ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 370px;
+    margin: 5px 0 0 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgba(46, 108, 223, 0.856);
+}
+
+.hi input:focus {
+  outline: none; /* bỏ viền mặc định */
+  border: 2px solid #007bff; /* viền xanh */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* hiệu ứng ánh sáng xanh */
+  border-radius: 4px; /* tuỳ chọn */
+}
+
+.noidungphai {
+    margin: 10px 80px -50px -50px;
+    padding: 130px 210px  0 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #fff;
+}

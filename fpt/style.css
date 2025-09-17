@@ -23,6 +23,7 @@ header {
 
 .logo {
     width: 15%;
+    cursor: pointer;
 }
 
 ul {
@@ -109,6 +110,11 @@ main {
     margin-top: 20px;
 }
 
+.anh:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
 .phim {
     width: 19%;
 }
@@ -149,4 +155,8 @@ table {
 
 p{
     color: gray;
+}
+
+.anh1 {
+    padding: auto;
 }

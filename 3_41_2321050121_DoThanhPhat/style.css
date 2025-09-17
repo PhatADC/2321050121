@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    
+}
+
+.nut {
+    float: right;
+    border-radius: 20px;
+    margin-top: -100px;
+    padding: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.noidungtrai {
+    margin: 100px 0 0 0;
+    display: flex;
+}
+
+ul .danhmuc {
+    float: left;
+    padding-top: 1000px;
+}
+
+.tren {
+    display: flex;
+}
+
+.can {
+    padding-top: 80px;
+    padding-right: 200px;
+}
+
+.anh{
+    height: 106px;
+    margin: -28px;
+    border: 0px;
+    padding: 80px;
+}
+
+.anh3 {
+    height: 106px;
+    margin: -28px;
+    border: 0px;
+    padding: 80px;
+}
+
+.hi {
+    padding-left: 50px;
+}
+
+.anh1 {
+    height: 106px;
+    margin: -28px;
+    border: 0px;
+    padding: 60px;
+    border-radius: 6px solid #000;
+    border: 6px;
+}
