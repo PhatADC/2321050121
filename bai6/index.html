@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+
+        <!-- liên kết file js vào file index -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <script>
+            // Internal
+            document.writeln("Hello World!" + "<br>");
+
+            // khai báo biến dùng let hoặc var
+            // cú pháp biến: let + tên biến = value
+            let hoTen = "Do Thanh Phat <br>";
+            document.writeln(hoTen);
+
+            // toán tử
+            let s1 = 10;
+            let s2 = 5;
+            let result = 0;
+            result = s1 + s2;
+            document.writeln("Kết quả tổng: ");
+            document.writeln(result + "<br>");
+            document.writeln(s1 == s2 + "<br>");
+            document.writeln(s1 != s2 + "<br>");
+            document.writeln(s1 === s2 + "<br>");
+            document.writeln(s1 !== s2 + "<br>");
+
+            let ketqua;
+            document.writeln(ketqua +"<br>");
+
+            // kiểu dữ liệu Object
+            let thongTin = {
+                hoTen: "Do Thanh Phat",
+                MSSV: 2321050121,
+                Lop: "DCCTCT68A",
+                gioiTinh: true,
+                tuoi: 20,
+            }
+
+            let diaChi = {
+                thanhPho: "Tu Son",
+                phuong: "Chau Khe",
+                duong: "Da Van",
+                soNha: 27,
+            }
+            thongTin.diaChi = diaChi;
+            
+            document.writeln("Xin chào " + thongTin.hoTen + " " + thongTin.tuoi + " tuổi"
+                + " Nhà " + thongTin.diaChi.thanhPho + " " + thongTin.diaChi.phuong
+            );
+            let namnay = 2025;
+             document.writeln("Xin chào " + thongTin.hoTen + " " + thongTin.tuoi + " tuổi"
+                + " Nhà " + thongTin.diaChi.thanhPho + " " + thongTin.diaChi.phuong + " sinh Nam " + (namnay - thongTin.tuoi)
+            );
+        </script>
+    </body>
+</html>
