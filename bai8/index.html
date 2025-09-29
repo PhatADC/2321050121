@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            let arr = [1, 2, 3, 4, 5, 'a', 'b', 'c', 5]; // khai báo mảng
+
+            document.writeln(arr.length + '<br>'); // độ dài của mảng
+
+            document.writeln(arr[0] + '<br>') // lấy phần tử trong mảng thông qua index
+
+            document.writeln(arr.indexOf(1) + '<br>'); // trả về vị trí xuất hiện đầu tiên của phần tử trong mảng
+
+            document.writeln(arr.lastIndexOf(5) + '<br>'); // trả về vị trí xuất hiện cuối cùng của phần tử trong mảng
+
+            document.writeln(Array.isArray(arr) + '<br>'); // ktra xem phần tử đó có thuộc kiểu dữ liệu array hay ko
+
+            // phương thức concat dùng để gộp các phần tử với nhau thành 1 mảng
+            let a, b, c, d;
+            a = new Array(1, 2, 3);
+            b = "JavaScript";
+            c  = [42, "VBScriprt"];
+            d = a.concat(b, c);
+            document.writeln(d + '<br>');
+            document.writeln(Array.isArray(d) + '<br>');
+
+            // phương thức join dùng để chuyển đổi từ mảng thành string
+            document.writeln(d.join("-") + '<br>');
+
+            // phương thức pop là để lấy phần tử cuối cùng ra khỏi mảng
+            e = d.pop();
+            document.writeln(e + '<br>')
+
+            // phương thức push là để đẩy phần tử mình muốn thêm vào vị trí cuối cùng
+            d.push("sạkdsak");
+            document.writeln(d + '<br>');
+            
+            // phương thức reverse dùng để đảo ngược lại các phần tử trong mảng
+            document.writeln(d.reverse() + '<br>')
+
+            // shift(): xóa phần tử đầu tiên
+            // unshift(): thêm phần tử vào đầu mảng
+
+            // if else 
+            let today = new Date();
+            let now = today.getHours();
+            if(now < 10){
+                document.writeln("Chào buổi sáng" + '<br>');
+            }
+            else if(now >= 10 && now < 12){
+                document.writeln("Chào buổi trưa" + '<br>');
+            }
+            else if(now >= 12 && now < 17){
+                document.writeln("Chào buổi chiều" + '<br>');
+            }
+            else if(now >= 17 && now < 22){
+                document.writeln("Chào buổi tối" + '<br>');
+            }
+            else{
+                document.writeln("Chào buổi đêm" + '<br>');
+            }
+
+            let so = 10;
+            if(so % 2 == 0)
+            document.writeln("Đây là số chẵn!" + '<br>');
+            else document.writeln("Đây là số lẻ" + '<br>')
+            let soTo = "100000000000000000000000000001";
+            let cuoi = parseInt(so[so.length - 1]);
+            if(cuoi % 2 == 0)
+            document.writeln("Chẵn");
+        else document.writeln("Lẻ");
+        </script>
+    </body>
+</html>
