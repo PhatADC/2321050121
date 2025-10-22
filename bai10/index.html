@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Bai 11</h1>
+        <h2>Tinh diem</h2>
+        <div>
+        Diem A: <input type="number" id="diemA" placeholder="Nhap diem A">
+        </div>
+        <div>
+        Diem B: <input type="number" id="diemB" placeholder="Nhap diem B">
+        </div>
+        <div>
+        Diem C: <input type="number" id="diemC" placeholder="Nhap diem C">
+        </div>
+        <div>
+            <button onclick="xemKetQua()">Tinh diem</button>
+        </div>
+        <div>
+            Ket qua: <input type="number" id="ketqua">
+        </div>
+        <script>
+            function xemKetQua() {
+            let diemA = parseFloat(document.getElementById('diemA').value);
+            let diemB = parseFloat(document.getElementById('diemB').value);
+            let diemC = parseFloat(document.getElementById('diemC').value);
+            let sum = tong3so(diemA, diemB, diemC);
+            if (sum !== undefined) {
+                document.getElementById('ketqua').value = sum.toFixed(2);
+            }
+    }
+
+            function tong3so(a, b, c) {
+            if (ktrahople(a, b, c)) {
+            let tong = a * 0.6 + b * 0.3 + c * 0.1;
+            return tong;
+        }
+    }
+
+    function ktrahople(a, b, c) {
+        let result = true;
+        if (a < 0 || a > 10 || isNaN(a)) {
+            alert("Điểm A không hợp lệ");
+            result = false;
+        }
+        if (b < 0 || b > 10 || isNaN(b)) {
+            alert("Điểm B không hợp lệ");
+            result = false;
+        }
+        if (c < 0 || c > 10 || isNaN(c)) {
+            alert("Điểm C không hợp lệ");
+            result = false;
+        }
+        return result;
+    }
+</script>
+
+    </body>
+</html>
