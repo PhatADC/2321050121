@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bech.css">
+  </head>
+  <body>
+    <h2 class="tieude">Vi du ve che do</h2>
+    <div class="anh">
+      <img src="img/images.png" alt="">
+    </div>    
+    <h2 class="tieude">Che do: sang</h2>
+    <div>
+      <button class="nut" onclick="doiCheDo()">Doi che do</button>
+    </div>
+
+    <script>
+      let cheDo = true;
+      function doiCheDo() {
+        if (cheDo) {
+          document.body.style.backgroundColor = 'black';
+          document.getElementsByTagName('h2')[1].innerHTML = 'Che do: Toi';
+          document.getElementsByTagName('h2')[0].style.color = 'white';
+          document.getElementsByTagName('h2')[1].style.color = 'white';
+          document.getElementsByTagName('img')[0].src = 'img/mattrang.jpg';
+          cheDo = false;
+        } else {
+          document.body.style.backgroundColor = 'white';
+          document.getElementsByTagName('h2')[1].innerHTML = 'Che do: Sang';
+          document.getElementsByTagName('h2')[0].style.color = 'black';
+          document.getElementsByTagName('h2')[1].style.color = 'black';
+          document.getElementsByTagName('img')[0].src = 'img/images.png';
+          cheDo = true;
+        }
+      }
+    </script>
+  </body>
+</html>

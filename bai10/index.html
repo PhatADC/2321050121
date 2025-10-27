@@ -24,6 +24,9 @@
         <div>
             Ket qua: <input type="number" id="ketqua">
         </div>
+        <div>
+            Hoc luc: <input type="text" id="diemTb">
+        </div>
         <script>
             function xemKetQua() {
             let diemA = parseFloat(document.getElementById('diemA').value);
@@ -33,6 +36,16 @@
             if (sum !== undefined) {
                 document.getElementById('ketqua').value = sum.toFixed(2);
             }
+            const xepLoai = (diemTb) => {
+            if (diemTb >= 8) {
+                return "Học lực: Giỏi";
+            } else if (diemTb >= 6.5 && diemTb < 8) {
+                return "Học lực: Khá";
+            } else if (diemTb >= 5 && diemTb < 6.5) {
+                return "Học lực: Trung Bình";
+            } else return "Học lực: Yếu";
+        }
+        document.getElementById('diemTb').value = xepLoai(sum);
     }
 
             function tong3so(a, b, c) {

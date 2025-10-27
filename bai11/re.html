@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính BMI</title>
+</head>
+<body>
+    <div class="nhap">
+        <div class="chieucao">
+            Chiều cao: <input type="text" id="chieucao" placeholder="Chiều cao (m)">
+        </div>
+
+        <div class="cannang">
+            Cân nặng: <input type="text" id="cannang" placeholder="Cân nặng (kg)">
+        </div>
+
+        <div class="bmi">
+            Chỉ số BMI: 
+            <button onclick="check()">Tính BMI</button>
+            <input type="text" id="ketQua" readonly>
+        </div>
+    </div>
+
+    <div class="anh">
+        <img src="" alt="" width="200">
+    </div>
+
+    <script>
+        function check() {
+            let cannang = parseFloat(document.getElementById('cannang').value);
+            let chieucao = parseFloat(document.getElementById('chieucao').value);
+            
+            if (isNaN(cannang) || isNaN(chieucao) || chieucao <= 0) {
+                alert("Vui lòng nhập chiều cao và cân nặng hợp lệ!");
+                return;
+            }
+
+            let ketQua = cannang / (chieucao * chieucao);
+            document.getElementById('ketQua').value = ketQua.toFixed(2);
+
+            let img = document.getElementsByTagName('img')[0];
+
+            if (ketQua < 18.5) {
+                img.src = 'img/thieu.png';
+            } 
+            else if (ketQua >= 18.5 && ketQua <= 24.9) {
+                img.src = 'img/binhthuong.png';
+            } 
+            else if (ketQua >= 25 && ketQua <= 29.9) {
+                img.src = 'img/thua.png';
+            } 
+            else if (ketQua >= 30 && ketQua <= 39.9) {
+                img.src = 'img/beocapdo1.png';
+            } 
+            else {
+                img.src = 'img/beonang.png';
+            }
+        }
+    </script>
+</body>
+</html>
