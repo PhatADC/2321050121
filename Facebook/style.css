@@ -82,9 +82,20 @@ body {
 }
 
 .noidungphai {
-    margin: 10px 80px -50px -50px;
-    padding: 130px 210px  0 10px;
+    margin: 100px 80px -50px -50px;
+    padding: 20px;
     border: 1px solid #fff;
     border-radius: 4px;
     background-color: #fff;
+}
+
+.quen{
+    padding-top: 16px;
+}
+
+.quen1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }

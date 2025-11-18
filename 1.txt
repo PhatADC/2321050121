@@ -1,0 +1,2 @@
+người dùng: tài khoản, mật khẩu, quyền trạng thái truy cập, họ tên
+sản phẩm: tên sản phẩm, mã sản phẩm, giá sản phẩm, địa điểm, màu sắc, kích thước, trạng thái
