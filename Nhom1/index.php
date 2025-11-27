@@ -70,20 +70,83 @@
             $color = "red";
             switch($color){
                 case "red":
-                    echo "is red!";
+                    echo "is red! <br>";
                     break;
                 case "blue":
-                    echo "is blue!";
+                    echo "is blue <br>!";
                     break;
                 default:
-                    echo "no color!";
+                    echo "no color! <br>";
                     break;    
             }
 
             // 9. for
-            for($i = 0; $i < 100; $i++){
-                echo $i . "<br>";
+            // for($i = 0; $i < 100; $i++){
+            //     echo $i . "<br>";
+            // }
+
+            // 10. mang
+            $mang = ["An",  "Nhat Anh", "Vu Anh"];
+            print_r($mang);
+            echo "<br>";
+            
+            // lay theo chi so
+            echo $mang[1];
+            echo "<br>";
+            
+            // dem do dai cua mang
+            echo count($mang);
+            echo "<br>";
+
+            // thay doi phan tu trong mang
+            $mang[0] = "Hai Anh";
+            print_r($mang);
+            echo "<br>";
+
+            // xoa phan tu cua mang
+            unset($mang[2]);
+            print_r($mang);
+            echo "<br>";
+
+            // them phan tu cho mang
+            $mang[] = "Luc";
+            print_r($mang);
+            echo "<br>";
+
+            // 11. sap xep
+            $mang2 = ["C", "B", "D", "A"];
+            print_r($mang2);
+            echo "<br>";
+
+            // sap xep tang
+            sort($mang2);
+            print_r($mang2);
+            echo "<br>";
+            // sap xep giam
+            rsort($mang2);
+            print_r($mang2);
+            echo "<br>";
+
+            // ktra xem bien co ton tai khong
+            $bienA = "Hello";
+            isset($bienA); // true
+            echo "<br>";
+            isset($bienB); // false
+            echo "<br>";
+
+            // 12. ham
+            # khong tham so
+            function xinChao(){
+                return "Hello";
             }
+            echo xinChao();
+            echo "<br>";
+
+            # ham co tham so
+            function xinChao2($ten){
+                return "Hello " . $ten;
+            }
+            echo xinChao2("Phat");
         ?>
     </body>
 </html>
